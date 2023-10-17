@@ -3,4 +3,5 @@ interface ITask {
 	title: string;
 	status: 'pending' | 'inprogress' | 'completed';
 	deadline: Date;
+	description: string;
 }
