@@ -9,12 +9,13 @@ import AddTaskForm from './AddTaskForm';
 const TaskWrapper = () => {
 	const { tasks } = useTask();
 
-	const [filteredTasks, setFilteredTasks] = useState<ITask[]>(tasks);
+	const [filteredTasks, setFilteredTasks] = useState<ITask[]>([]);
 	const [showAddTaskForm, setShowAddTaskForm] = useState(false);
 
 	useEffect(() => {
 		setFilteredTasks(tasks);
 	}, [tasks]);
+
 
 	return (
 		<div className='p-4 bg-gray-200 '>
