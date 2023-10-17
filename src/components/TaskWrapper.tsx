@@ -21,10 +21,10 @@ const TaskWrapper = () => {
 			<Modal
 				open={showAddTaskForm}
 				handleClose={() => setShowAddTaskForm((prev) => !prev)}
-		
 			>
 				<AddTaskForm handleClose={() => setShowAddTaskForm((prev) => !prev)} />
 			</Modal>
+
 			<TaskFilter {...{ setFilteredTasks }} />
 			<div className='w-full flex items-center justify-center mb-4'>
 				<button
